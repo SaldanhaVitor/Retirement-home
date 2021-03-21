@@ -24,6 +24,12 @@
     },
     "author": "Clenio Mendes <clenio.si@gmail.com>",
     "license": "GPL-3.0",
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run lint -s",
+            "pre-push": "npm run coverage"
+        }
+    },
     "dependencies": {
         "@hapi/joi": "16.1.7",
         "@hapi/joi-date": "2.0.1",
